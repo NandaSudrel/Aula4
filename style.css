@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient(rgb(151, 55, 211), rgb(0, 0, 0));
+    background: linear-gradient(rgb(2, 2, 2), rgb(0, 0, 0));
     text-align: center;
     font-family: cursive;
     text-shadow: 5px 5px 5px blue;
@@ -19,7 +19,7 @@ body{
     width: 100px;
     height: 75px;
     background-color: rgb(0, 21, 255);
-    color: rgb(255, 0, 0);
+    color: rgb(7, 7, 7);
     border: 5px solid black;
     margin-left: auto;
     margin-right: auto;
@@ -29,4 +29,54 @@ body{
     border-width: thin;
     box-shadow: 10px 10px 10px purple;
     border-radius: 15px;
+}
+#d3{
+    width: 100px;
+    height: 75px;
+    background-color: rgb(0, 21, 255);
+    color: rgb(0, 0, 0);
+    border: 5px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+
+    border-style: dashed; /*borda tracejada*/
+    float: none;
+    border-radius: 10px;
+    /*posicionamento;*/
+    position: static;
+}
+#d4{
+    width: 100px;
+    height: 75px;
+    background-color: rgb(0, 21, 255);
+    color: rgb(0, 0, 0);
+    border: 5px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border-style: dashed;
+    border-radius: 10px;
+
+    animation: animation 5s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes animation {
+    from{box-shadow: 10px 10px 10px red;}
+    to{box-shadow: 10px 10px 10px rgb(84, 1, 1);}
+}
+img{
+    display: inline-block;
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 5px;
+
+    animation: teste 5s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes teste{
+    from{box-shadow: 10px 10px 10x rgb(255, 2, 255);}
+    to{box-shadow: 10px 10px 10px rgb(63, 14, 63);}
 }
